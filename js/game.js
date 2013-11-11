@@ -1,7 +1,7 @@
 var Game = {
-	COLOR_HEALTH: "#f33",
-	COLOR_MANA: "#33f",
-	COLOR_SCORE: "#ff3",
+	COLOR_HEALTH: "red",
+	COLOR_MANA: "blue",
+	COLOR_SCORE: "yellow",
 	beings: {},
 	terrain: null,
 	player: null,
@@ -11,7 +11,7 @@ var Game = {
 	audio: null,
 
 	intro: function() {
-		if (!ROT.isSupported()) { return alert("Sorry, your browser is not sexy enough to run this game :-("); }
+		if (!ROT.isSupported()) { return alert("Sorry, but your browser is not advanced enough to run this game"); }
 
 		document.addEventListener("click", this);
 		this.audio = new Game.Audio();
